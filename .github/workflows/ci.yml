@@ -27,3 +27,11 @@ jobs:
       - name: Linting CSS (stylelint)
         working-directory: ./
         run: npx stylelint "prac1cicd/css/**/*.css"
+
+      - name: Linting JavaScript (eslint)
+        working-directory: ./
+        run: npx eslint prac1cicd/js/
+
+      - name: Ejecutar tests unitarios
+        working-directory: ./
+        run: npm test prac1cicd
