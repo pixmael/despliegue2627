@@ -2,8 +2,9 @@ root {
   --primary: #2563eb;
   --error:   #dc2626;
   --bg:      #f9fafb;
-  --card:    #ffffff;
+  --card:    #fff;
 }
+
 @media (prefers-color-scheme: dark) {
   	:root { --bg: #111827; 
 	--card: #1f2937; 
@@ -29,7 +30,7 @@ body {
 	background: var(--card); 
 	padding: 2rem;
 	border-radius: 12px; 
-	box-shadow: 0 4px 24px rgba(0,0,0,.1); 
+	box-shadow: 0 4px 24px rgb(0 0 0 / 10%); 
 	width: min(400px,90%); 
 }
 
