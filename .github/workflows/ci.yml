@@ -34,4 +34,4 @@ jobs:
 
       - name: Ejecutar tests unitarios
         working-directory: ./
-        run: npm test prac1cicd
+        run: npm test
