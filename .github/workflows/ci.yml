@@ -17,9 +17,9 @@ jobs:
           cache: 'npm'
 
       - name: Instalar dependencias
-        #working-directory:
+        working-directory: ./
         run: npm ci
 
       - name: Validar HTML (html-validate)
-        #working-directory:
-        run: npx html-validate index.html
+        working-directory: ./
+        run: npx html-validate prac1cicd/index.html
