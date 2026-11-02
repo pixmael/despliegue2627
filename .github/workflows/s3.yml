@@ -26,3 +26,5 @@ jobs:
           --exclude "tests/*" \
           --exclude "package*.json" \
           --exclude "*.cjs"
+    - name: Mostrar el contenido del bucket
+      run: aws s3 ls s3://${{ secrets.S3_BUCKET }} --recursive
